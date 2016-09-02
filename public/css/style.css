@@ -1,0 +1,45 @@
+#container{
+  width: 1024px;
+  height: 768px;
+  background-color: white;
+  position: relative;
+}
+
+#square{
+  width: 200px;
+  height: 200px;
+  background-color: lightgreen;
+  text-align: center;
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  animation: blockAni 7s 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes blockAni {
+  0% {
+    transform: none;
+  }
+  14% {
+    transform: translate3d(0, 100%, 0);
+  }
+  28% {
+    transform: rotate(180deg) translate3d(100%, 0, 0);
+  }
+  42% {
+    transform: none;
+  }
+  56% {
+    transform: translate3d(100%, 0, 0);
+  }
+  70% {
+    transform: translate3d(100%, 0, 0);
+  }
+  84% {
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(100%, 0, 0);
+  }
+}
